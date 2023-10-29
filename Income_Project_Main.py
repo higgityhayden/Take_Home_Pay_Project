@@ -1,7 +1,7 @@
 from Income_Project_Dicts import fed_tax_dict as fed_tax
 from Income_Project_Dicts import state_tax_dict as state_tax
 
-#Functions
+#Functions used in the equation
 def marginal_f_income_taxes(income):
     left_to_tax = income
     fed_taxes = fed_tax['Single']
