@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Take Home Pay Calculator</title>
+</head>
+<body>
+<h1>Program to Calculate Net Income</h1>
+<form method="post">
+    <p style="list-style-type: none;" >
+        <br>
+            What is your base income?
+        <br>
+            <input type="number" name="base_income" placeholder="Base Income" value="{{ base_income }}"/>
+        <br>
+            Annual Bonus Percentage? Input 0 if no annual bonus
+        <br>
+            <input type="number" name="bonus_percentage" placeholder="Bonus Percentage" value="{{ bonus_percentage }}"/>
+        <br>
+            What state do you live in?
+        <br>
+            <input type="text" name="state" placeholder="State" value="{{ state }}"/><br>
+        <br>
+            <input type="submit"/>
+    </p>
+</form>
+<p>
+    <h4 style="color:Tomato;">{{ Error }}</h4>
+    Gross Income: $
+    <b>{{ Gross }}</b>
+        <br>
+    ---------------------------
+        <br>
+    State Income Taxes: $
+    <b>{{ SIT }}</b>
+        <br>
+    Federal Income Taxes: $
+    <b>{{ FIT }}</b>
+        <br>
+    Medicare and Social Security: $
+    <b>{{ SS }}</b>
+        <br>
+    Annual Bonus Amount: $
+    <b>{{ Bonus }}</b>
+        <br>
+    ---------------------------
+        <br>
+    Take Home Pay: $
+    <b>{{ result }}</b>
+</body>
+</html>
